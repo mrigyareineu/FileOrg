@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-organizer"
+version = "0.1.0"
+description = "CLI tool to organize files by type and date"
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=13.0",
+    "click>=8.1",
+]
+
+[project.scripts]
+file-organizer = "file_organizer.cli:main"
