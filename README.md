@@ -35,6 +35,8 @@ file-organizer ~/Downloads --by-date
 file-organizer --undo
 ```
 
+On Windows, use `%USERPROFILE%\Downloads` or `C:\Users\YourName\Downloads` instead of `~/Downloads`.
+
 ## Configuration
 
 Use `--config path/to/rules.json` to override default category rules. Example:
@@ -68,3 +70,5 @@ Requires Python 3.10+. Run tests with:
 ```bash
 python3 -m pytest tests/ -v
 ```
+
+On Windows, use `python -m pytest tests/ -v` instead.
